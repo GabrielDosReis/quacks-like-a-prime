@@ -1,8 +1,13 @@
+```yaml
 ---
-# the default layout is 'page'
+title: If It Quacks Like a Prime
+Author: Gabriel Dos Reis
 icon: fas fa-info-circle
-order: 4
----
+order: 1
+Content:
+| #   | Title                | Audience                 |
+| --- | -------------------- | ------------------------ |
+| 1   | The Numbers That Lie | General / curious reader |
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+---
+```

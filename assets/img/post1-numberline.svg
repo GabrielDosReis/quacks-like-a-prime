@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" font-family="'Segoe UI', system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="320" fill="#fafafa" rx="8"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Primes, Composites, and Pseudoprimes to Base 2 (up to 600)</text>
+  
+  <!-- Legend -->
+  <circle cx="180" cy="58" r="6" fill="#2d8a4e"/>
+  <text x="192" y="63" font-size="12" fill="#333">Prime</text>
+  <circle cx="290" cy="58" r="6" fill="#c0392b"/>
+  <text x="302" y="63" font-size="12" fill="#333">Composite (caught by Fermat)</text>
+  <circle cx="530" cy="58" r="6" fill="#e6a817" stroke="#b8860b" stroke-width="1.5"/>
+  <text x="542" y="63" font-size="12" fill="#333">Pseudoprime (fools Fermat, base 2)</text>
+  
+  <!-- Number line -->
+  <line x1="40" y1="280" x2="860" y2="280" stroke="#666" stroke-width="1.5"/>
+  
+  <!-- Tick marks and labels every 100 -->
+  <line x1="40" y1="275" x2="40" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="40" y="298" text-anchor="middle" font-size="11" fill="#666">0</text>
+  <line x1="176" y1="275" x2="176" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="176" y="298" text-anchor="middle" font-size="11" fill="#666">100</text>
+  <line x1="312" y1="275" x2="312" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="312" y="298" text-anchor="middle" font-size="11" fill="#666">200</text>
+  <line x1="449" y1="275" x2="449" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="449" y="298" text-anchor="middle" font-size="11" fill="#666">300</text>
+  <line x1="585" y1="275" x2="585" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="585" y="298" text-anchor="middle" font-size="11" fill="#666">400</text>
+  <line x1="721" y1="275" x2="721" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="721" y="298" text-anchor="middle" font-size="11" fill="#666">500</text>
+  <line x1="857" y1="275" x2="857" y2="285" stroke="#666" stroke-width="1"/>
+  <text x="857" y="298" text-anchor="middle" font-size="11" fill="#666">600</text>
+
+  <!-- 
+    Layout: x = 40 + (n/600)*820
+    Primes: green dots at y=260 (row 1)
+    Composites: small red dots at y=240 (row 2, sparser - just show some)
+    Pseudoprimes base 2 up to 600: 341, 561 — yellow dots with labels
+  -->
+  
+  <!-- === PRIMES (green, y=255) === -->
+  <!-- Showing all primes up to 600 as small dots -->
+  <circle cx="43" cy="255" r="2.5" fill="#2d8a4e"/><!-- 2 -->
+  <circle cx="44" cy="255" r="2.5" fill="#2d8a4e"/><!-- 3 -->
+  <circle cx="47" cy="255" r="2.5" fill="#2d8a4e"/><!-- 5 -->
+  <circle cx="50" cy="255" r="2.5" fill="#2d8a4e"/><!-- 7 -->
+  <circle cx="55" cy="255" r="2.5" fill="#2d8a4e"/><!-- 11 -->
+  <circle cx="58" cy="255" r="2.5" fill="#2d8a4e"/><!-- 13 -->
+  <circle cx="63" cy="255" r="2.5" fill="#2d8a4e"/><!-- 17 -->
+  <circle cx="66" cy="255" r="2.5" fill="#2d8a4e"/><!-- 19 -->
+  <circle cx="71" cy="255" r="2.5" fill="#2d8a4e"/><!-- 23 -->
+  <circle cx="80" cy="255" r="2.5" fill="#2d8a4e"/><!-- 29 -->
+  <circle cx="82" cy="255" r="2.5" fill="#2d8a4e"/><!-- 31 -->
+  <circle cx="90" cy="255" r="2.5" fill="#2d8a4e"/><!-- 37 -->
+  <circle cx="96" cy="255" r="2.5" fill="#2d8a4e"/><!-- 41 -->
+  <circle cx="99" cy="255" r="2.5" fill="#2d8a4e"/><!-- 43 -->
+  <circle cx="104" cy="255" r="2.5" fill="#2d8a4e"/><!-- 47 -->
+  <circle cx="112" cy="255" r="2.5" fill="#2d8a4e"/><!-- 53 -->
+  <circle cx="121" cy="255" r="2.5" fill="#2d8a4e"/><!-- 59 -->
+  <circle cx="123" cy="255" r="2.5" fill="#2d8a4e"/><!-- 61 -->
+  <circle cx="131" cy="255" r="2.5" fill="#2d8a4e"/><!-- 67 -->
+  <circle cx="137" cy="255" r="2.5" fill="#2d8a4e"/><!-- 71 -->
+  <circle cx="140" cy="255" r="2.5" fill="#2d8a4e"/><!-- 73 -->
+  <circle cx="148" cy="255" r="2.5" fill="#2d8a4e"/><!-- 79 -->
+  <circle cx="153" cy="255" r="2.5" fill="#2d8a4e"/><!-- 83 -->
+  <circle cx="159" cy="255" r="2.5" fill="#2d8a4e"/><!-- 89 -->
+  <circle cx="164" cy="255" r="2.5" fill="#2d8a4e"/><!-- 97 -->
+  <!-- 100-200 -->
+  <circle cx="178" cy="255" r="2.5" fill="#2d8a4e"/><!-- 101 -->
+  <circle cx="181" cy="255" r="2.5" fill="#2d8a4e"/><!-- 103 -->
+  <circle cx="187" cy="255" r="2.5" fill="#2d8a4e"/><!-- 107 -->
+  <circle cx="190" cy="255" r="2.5" fill="#2d8a4e"/><!-- 109 -->
+  <circle cx="193" cy="255" r="2.5" fill="#2d8a4e"/><!-- 113 -->
+  <circle cx="204" cy="255" r="2.5" fill="#2d8a4e"/><!-- 127 -->
+  <circle cx="218" cy="255" r="2.5" fill="#2d8a4e"/><!-- 131 -->
+  <circle cx="226" cy="255" r="2.5" fill="#2d8a4e"/><!-- 137 -->
+  <circle cx="230" cy="255" r="2.5" fill="#2d8a4e"/><!-- 139 -->
+  <circle cx="243" cy="255" r="2.5" fill="#2d8a4e"/><!-- 149 -->
+  <circle cx="247" cy="255" r="2.5" fill="#2d8a4e"/><!-- 151 -->
+  <circle cx="254" cy="255" r="2.5" fill="#2d8a4e"/><!-- 157 -->
+  <circle cx="262" cy="255" r="2.5" fill="#2d8a4e"/><!-- 163 -->
+  <circle cx="268" cy="255" r="2.5" fill="#2d8a4e"/><!-- 167 -->
+  <circle cx="276" cy="255" r="2.5" fill="#2d8a4e"/><!-- 173 -->
+  <circle cx="285" cy="255" r="2.5" fill="#2d8a4e"/><!-- 179 -->
+  <circle cx="288" cy="255" r="2.5" fill="#2d8a4e"/><!-- 181 -->
+  <circle cx="296" cy="255" r="2.5" fill="#2d8a4e"/><!-- 191 -->
+  <circle cx="303" cy="255" r="2.5" fill="#2d8a4e"/><!-- 193 -->
+  <circle cx="307" cy="255" r="2.5" fill="#2d8a4e"/><!-- 197 -->
+  <circle cx="312" cy="255" r="2.5" fill="#2d8a4e"/><!-- 199 -->
+  <!-- 200-400 (representative selection) -->
+  <circle cx="317" cy="255" r="2.5" fill="#2d8a4e"/><!-- 211 -->
+  <circle cx="328" cy="255" r="2.5" fill="#2d8a4e"/><!-- 223 -->
+  <circle cx="337" cy="255" r="2.5" fill="#2d8a4e"/><!-- 227 -->
+  <circle cx="340" cy="255" r="2.5" fill="#2d8a4e"/><!-- 229 -->
+  <circle cx="350" cy="255" r="2.5" fill="#2d8a4e"/><!-- 233 -->
+  <circle cx="359" cy="255" r="2.5" fill="#2d8a4e"/><!-- 239 -->
+  <circle cx="365" cy="255" r="2.5" fill="#2d8a4e"/><!-- 241 -->
+  <circle cx="377" cy="255" r="2.5" fill="#2d8a4e"/><!-- 251 -->
+  <circle cx="388" cy="255" r="2.5" fill="#2d8a4e"/><!-- 257 -->
+  <circle cx="397" cy="255" r="2.5" fill="#2d8a4e"/><!-- 263 -->
+  <circle cx="408" cy="255" r="2.5" fill="#2d8a4e"/><!-- 269 -->
+  <circle cx="413" cy="255" r="2.5" fill="#2d8a4e"/><!-- 271 -->
+  <circle cx="421" cy="255" r="2.5" fill="#2d8a4e"/><!-- 277 -->
+  <circle cx="423" cy="255" r="2.5" fill="#2d8a4e"/><!-- 281 -->
+  <circle cx="427" cy="255" r="2.5" fill="#2d8a4e"/><!-- 283 -->
+  <circle cx="434" cy="255" r="2.5" fill="#2d8a4e"/><!-- 293 -->
+  <!-- skip to 300+ -->
+  <circle cx="451" cy="255" r="2.5" fill="#2d8a4e"/><!-- 307 -->
+  <circle cx="462" cy="255" r="2.5" fill="#2d8a4e"/><!-- 311 -->
+  <circle cx="468" cy="255" r="2.5" fill="#2d8a4e"/><!-- 313 -->
+  <circle cx="480" cy="255" r="2.5" fill="#2d8a4e"/><!-- 317 -->
+  <circle cx="497" cy="255" r="2.5" fill="#2d8a4e"/><!-- 331 -->
+  <circle cx="506" cy="255" r="2.5" fill="#2d8a4e"/><!-- 337 -->
+  <circle cx="516" cy="255" r="2.5" fill="#2d8a4e"/><!-- 347 -->
+  <circle cx="520" cy="255" r="2.5" fill="#2d8a4e"/><!-- 349 -->
+  <circle cx="523" cy="255" r="2.5" fill="#2d8a4e"/><!-- 353 -->
+  <circle cx="530" cy="255" r="2.5" fill="#2d8a4e"/><!-- 359 -->
+  <circle cx="537" cy="255" r="2.5" fill="#2d8a4e"/><!-- 367 -->
+  <circle cx="545" cy="255" r="2.5" fill="#2d8a4e"/><!-- 373 -->
+  <circle cx="558" cy="255" r="2.5" fill="#2d8a4e"/><!-- 379 -->
+  <circle cx="563" cy="255" r="2.5" fill="#2d8a4e"/><!-- 383 -->
+  <circle cx="572" cy="255" r="2.5" fill="#2d8a4e"/><!-- 389 -->
+  <circle cx="577" cy="255" r="2.5" fill="#2d8a4e"/><!-- 397 -->
+  <!-- 400-600 -->
+  <circle cx="588" cy="255" r="2.5" fill="#2d8a4e"/><!-- 401 -->
+  <circle cx="597" cy="255" r="2.5" fill="#2d8a4e"/><!-- 409 -->
+  <circle cx="604" cy="255" r="2.5" fill="#2d8a4e"/><!-- 419 -->
+  <circle cx="616" cy="255" r="2.5" fill="#2d8a4e"/><!-- 421 -->
+  <circle cx="623" cy="255" r="2.5" fill="#2d8a4e"/><!-- 431 -->
+  <circle cx="633" cy="255" r="2.5" fill="#2d8a4e"/><!-- 433 -->
+  <circle cx="640" cy="255" r="2.5" fill="#2d8a4e"/><!-- 439 -->
+  <circle cx="645" cy="255" r="2.5" fill="#2d8a4e"/><!-- 443 -->
+  <circle cx="649" cy="255" r="2.5" fill="#2d8a4e"/><!-- 449 -->
+  <circle cx="657" cy="255" r="2.5" fill="#2d8a4e"/><!-- 457 -->
+  <circle cx="664" cy="255" r="2.5" fill="#2d8a4e"/><!-- 461 -->
+  <circle cx="672" cy="255" r="2.5" fill="#2d8a4e"/><!-- 463 -->
+  <circle cx="679" cy="255" r="2.5" fill="#2d8a4e"/><!-- 467 -->
+  <circle cx="690" cy="255" r="2.5" fill="#2d8a4e"/><!-- 479 -->
+  <circle cx="697" cy="255" r="2.5" fill="#2d8a4e"/><!-- 487 -->
+  <circle cx="706" cy="255" r="2.5" fill="#2d8a4e"/><!-- 491 -->
+  <circle cx="713" cy="255" r="2.5" fill="#2d8a4e"/><!-- 499 -->
+  <circle cx="723" cy="255" r="2.5" fill="#2d8a4e"/><!-- 503 -->
+  <circle cx="732" cy="255" r="2.5" fill="#2d8a4e"/><!-- 509 -->
+  <circle cx="741" cy="255" r="2.5" fill="#2d8a4e"/><!-- 521 -->
+  <circle cx="753" cy="255" r="2.5" fill="#2d8a4e"/><!-- 523 -->
+  <circle cx="760" cy="255" r="2.5" fill="#2d8a4e"/><!-- 541 -->
+  <circle cx="787" cy="255" r="2.5" fill="#2d8a4e"/><!-- 547 -->
+  <circle cx="797" cy="255" r="2.5" fill="#2d8a4e"/><!-- 557 -->
+  <circle cx="810" cy="255" r="2.5" fill="#2d8a4e"/><!-- 563 -->
+  <circle cx="823" cy="255" r="2.5" fill="#2d8a4e"/><!-- 569 -->
+  <circle cx="833" cy="255" r="2.5" fill="#2d8a4e"/><!-- 571 -->
+  <circle cx="843" cy="255" r="2.5" fill="#2d8a4e"/><!-- 577 -->
+  <circle cx="853" cy="255" r="2.5" fill="#2d8a4e"/><!-- 587 -->
+  <circle cx="857" cy="255" r="2.5" fill="#2d8a4e"/><!-- 593 -->
+
+  <!-- === COMPOSITES (small red dots, y=235, sparse representative sample) === -->
+  <!-- Just a scattering to show "most numbers are in this row" -->
+  <circle cx="45" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 4 -->
+  <circle cx="48" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 6 -->
+  <circle cx="53" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 9 -->
+  <circle cx="57" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 12 -->
+  <circle cx="60" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 15 -->
+  <circle cx="68" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 21 -->
+  <circle cx="74" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 25 -->
+  <circle cx="87" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 35 -->
+  <circle cx="107" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 49 -->
+  <circle cx="130" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 66 -->
+  <circle cx="155" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 85 -->
+  <circle cx="175" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 99 -->
+  <circle cx="205" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 121 -->
+  <circle cx="235" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 143 -->
+  <circle cx="265" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 165 -->
+  <circle cx="295" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 187 -->
+  <circle cx="324" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 209 -->
+  <circle cx="354" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 231 -->
+  <circle cx="384" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 253 -->
+  <circle cx="414" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 275 -->
+  <circle cx="444" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 297 -->
+  <circle cx="474" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 319 -->
+  <circle cx="534" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 363 -->
+  <circle cx="564" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 385 -->
+  <circle cx="594" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 407 -->
+  <circle cx="624" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 429 -->
+  <circle cx="654" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 451 -->
+  <circle cx="684" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 473 -->
+  <circle cx="714" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 495 -->
+  <circle cx="744" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 517 -->
+  <circle cx="774" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 539 -->
+  <circle cx="834" cy="235" r="1.8" fill="#c0392b" opacity="0.5"/><!-- 583 -->
+  
+  <!-- Row labels -->
+  <text x="36" y="258" text-anchor="end" font-size="10" fill="#2d8a4e">Primes</text>
+  <text x="36" y="238" text-anchor="end" font-size="10" fill="#c0392b">Composites</text>
+  
+  <!-- === PSEUDOPRIME: 341 (the star of Post 1) === -->
+  <circle cx="506" cy="155" r="10" fill="#e6a817" stroke="#b8860b" stroke-width="2"/>
+  <text x="506" y="160" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a">341</text>
+  <!-- Arrow down to number line -->
+  <line x1="506" y1="167" x2="506" y2="248" stroke="#b8860b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="506" cy="250" r="3" fill="#e6a817" stroke="#b8860b" stroke-width="1"/>
+  <!-- Label -->
+  <text x="506" y="140" text-anchor="middle" font-size="11" fill="#8B6914" font-style="italic">Smallest pseudoprime (base 2)</text>
+  <text x="506" y="125" text-anchor="middle" font-size="10" fill="#8B6914">11 × 31 — composite, but passes Fermat's test</text>
+  
+  <!-- === PSEUDOPRIME: 561 (first Carmichael) === -->
+  <circle cx="806" cy="155" r="10" fill="#e6a817" stroke="#b8860b" stroke-width="2.5"/>
+  <!-- Extra ring to indicate "perfect liar" -->
+  <circle cx="806" cy="155" r="14" fill="none" stroke="#b8860b" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="806" y="160" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a">561</text>
+  <!-- Arrow down -->
+  <line x1="806" y1="171" x2="806" y2="248" stroke="#b8860b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="806" cy="250" r="3" fill="#e6a817" stroke="#b8860b" stroke-width="1"/>
+  <!-- Label -->
+  <text x="806" y="125" text-anchor="middle" font-size="10" fill="#8B6914">3 × 11 × 17 — fools Fermat to EVERY base</text>
+  <text x="806" y="140" text-anchor="middle" font-size="11" fill="#8B6914" font-style="italic">First Carmichael number (perfect liar)</text>
+  
+  <!-- Annotation at bottom -->
+  <text x="450" y="315" text-anchor="middle" font-size="10" fill="#999" font-style="italic">Green dots: genuine primes. Red dots: composites caught immediately. Yellow: impostors that slip through.</text>
+</svg>
